@@ -24,18 +24,18 @@ const throwError = (message: string) => {
 
 const todaysWeather = {
   date: new Date(),
-  weather: "sunny"
+  weather: "sunny",
 };
 
-const logWeather = (todaysWeather: { date: Date, weather: string }): void => {
-  console.log(date);
+const logWeather = (todaysWeather: { date: Date; weather: string }): void => {
+  console.log(todaysWeather.date);
   console.log(weather);
 };
 
-const weather = ({date, weather} {date: Date, weather: string}): void => {
+const weather = ({ date, weather }: { date: Date; weather: string }): void => {
   console.log(date);
   console.log(weather);
-}
+};
 // ES2015
 const weatherLog = ({ date, weather }) => {
   console.log(date);
